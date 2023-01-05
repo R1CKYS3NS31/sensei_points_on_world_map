@@ -14,12 +14,11 @@ export const WorldMap = () => {
 
   if (!worldAtlas) return <pre>Please wait. World map Loading...</pre>;
   if (!cities) return <pre>Please wait. Cities Loading...</pre>;
-
   // console.log(cities);
 
   // the circle
   const sizeValue = (city) => city.population;
-  const maxRadius = 2;
+  const maxRadius = 15;
 
   const sizeScale = scaleSqrt()
     .domain([0, max(cities, sizeValue)])
