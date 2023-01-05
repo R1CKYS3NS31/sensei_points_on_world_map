@@ -15,7 +15,7 @@ export const Marks = ({ worldAtlas: { land, interiors }, cities }) => (
     {/* cities */}
     {cities.map((city) => {
       const [x, y] = projection([city.lng, city.lat]);
-      return <circle cx={x} cy={y} r={1}/>
+      return <circle cx={x} cy={y} r={1.5}/>
     })}
   </g>
 );

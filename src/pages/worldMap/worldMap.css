@@ -8,18 +8,23 @@ pre {
   font-size: 7em;
 }
 
-.marks .land {
-  fill: #d8d8d8;
+.marks .sphere {
+  fill: #fbfbfb;
 }
 
-.marks .sphere {
+.marks .land {
   fill: #ececec;
 }
 .marks .interiors {
-  stroke: #c3c3c3;
+  stroke: #d9dfe0;
   fill: none;
 }
 .marks .graticule {
-  stroke: #dadada;
+  stroke: #ececec;
   fill: none;
+}
+
+circle {
+  fill: #137b80;
+  opacity: 0.3;
 }
