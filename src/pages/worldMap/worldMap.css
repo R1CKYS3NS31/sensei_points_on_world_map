@@ -9,14 +9,14 @@ pre {
 }
 
 .marks .land {
-  fill: #137b80;
+  fill: #d8d8d8;
 }
 
 .marks .sphere {
   fill: #ececec;
 }
 .marks .interiors {
-  stroke: #339498;
+  stroke: #c3c3c3;
   fill: none;
 }
 .marks .graticule {

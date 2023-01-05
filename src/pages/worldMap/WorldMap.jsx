@@ -8,19 +8,18 @@ const width = 960;
 const height = 500;
 
 export const WorldMap = () => {
-  const data = UseWorldAtlas();
+  const worldAtlas = UseWorldAtlas();
   const cities = useCities()
+  // console.log(cities);
 
-  console.log(cities);
-
-  if (!data) return <pre>Please wait. World map Loading...</pre>;
+  if (!worldAtlas) return <pre>Please wait. World map Loading...</pre>;
   if (!cities) return <pre>Please wait. Cities Loading...</pre>;
 
   return (
     <>
       <h1>Contries with topojson</h1>;
       <svg width={width} height={height}>
-        <Marks data={data} />
+        <Marks worldAtlas={worldAtlas} cities={cities} />
       </svg>
     </>
   );
