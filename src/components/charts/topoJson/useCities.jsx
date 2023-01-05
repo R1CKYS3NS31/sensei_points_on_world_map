@@ -8,7 +8,7 @@ const csvUrl =
 const row = (data) => {
   data.lat = +data.lat;
   data.lng = +data.lng;
-
+  data.population = +data.population
   return data;
 };
 
